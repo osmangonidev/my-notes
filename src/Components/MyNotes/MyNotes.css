@@ -1,0 +1,28 @@
+.note-wrapper{
+    margin-top: 20px;
+    
+}
+.header {
+    text-align: center;
+}
+.header-title{
+    display: inline-block;
+}
+.add-note{
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.header .log-out{
+    display: inline-block;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+.header .log-out:hover{
+    color:rgb(187, 183, 183) !important;
+    cursor: pointer;
+}
