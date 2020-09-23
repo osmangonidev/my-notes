@@ -18,11 +18,11 @@ const MyNotes = (props) => {
         <div className='my-note-wrapper'>
             <div class="header bg-primary ">
                 <p onClick={handleLogOut} className='log-out text-light'>Log out <ExitToAppIcon></ExitToAppIcon> </p><br/>
-                <h1 class=" p-3 text-light header-title ">My Notes ({notes.length}) </h1><Link to='/add-note' className='text-light add-note'><FontAwesomeIcon icon={faPlusSquare}></FontAwesomeIcon> add</Link>
+                <h1 class=" p-3 text-light header-title mt-5 ">My Notes ({notes? notes.length :0}) </h1><Link to='/add-note' className='text-light add-note'><FontAwesomeIcon icon={faPlusSquare}></FontAwesomeIcon> add</Link>
             </div>
-            <div className='row note-wrapper'>
+            <div className='row note-wrapper mr-5'>
                 {
-                    notes.map(item=>{
+                    notes && notes.map(item=>{
                         return(
                             
                                 <div class="card col-sm-5 ml-5 mr-1 text-white bg-secondary mb-3">

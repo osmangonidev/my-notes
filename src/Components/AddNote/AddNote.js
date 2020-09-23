@@ -38,7 +38,7 @@ const AddNote = (props) => {
         <div class="container mt-3">
          <div class="jumbotron">
            <p onClick={handleLogOut} className= 'log-out rounded '>Log out <ExitToAppIcon></ExitToAppIcon> </p>
-           <h3 className='heading'>Add New Notes</h3><Link className='view-note' to={'/my-notes'} >View Notes <FontAwesomeIcon icon={faArrowAltCircleRight}></FontAwesomeIcon> </Link>
+           <div className='mt-5'><h3 className='heading'>Add New Notes</h3><Link className='view-note' to={'/my-notes'} >View Notes <FontAwesomeIcon icon={faArrowAltCircleRight}></FontAwesomeIcon> </Link></div>
            <form id="notesForm" onSubmit={handleAddNote}>
              <div class="form-group">
                <label for="title">Title</label>
