@@ -30,8 +30,9 @@ const Login = () => {
     function facebookLogin(){
         firebase.auth().signInWithPopup(facebookProvider)
         .then(result=>{
-            sessionStorage.setItem('isLogged',JSON.stringify(true))
             window.location.replace('/my-notes');
+            sessionStorage.setItem('isLogged',JSON.stringify(true))
+            
         })
     }
 
@@ -127,8 +128,8 @@ const Login = () => {
                 </form>
                 <div id='or-wrapper'>
                     <p id='or'>or</p>
-                    <button className='px-5 py-2 m-1' onClick={googleSignUp}><FontAwesomeIcon  className='mr-5' icon={faGoogle}/>Continue with Google</button>
-                    <button className=' py-2 m-1 mb-5 google-sign-up' onClick={facebookLogin}><FontAwesomeIcon className='mr-5'  icon={faFacebook} />Continue with Facebook</button>
+                    <button className='px-4 py-2 m-1' onClick={googleSignUp}><FontAwesomeIcon  className='mr-5' icon={faGoogle}/>Continue with Google</button><br/>
+                    <button className=' py-2 m-1 mb-5 px-4' onClick={facebookLogin}><FontAwesomeIcon className='mr-5'  icon={faFacebook} />Continue with Facebook</button>
                 </div>
             </div>
         
